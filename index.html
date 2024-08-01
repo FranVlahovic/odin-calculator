@@ -4,10 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Calculator | Fran Developer</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="calculator">
+        <div id="container">
+            <div id="display"><h1>0</h1></div>
+            <div class="calc-buttons">
+                <button class="operator" onclick="handleOperator('+')">+</button>
+                <button class="operator" onclick="handleOperator('-')">-</button>
+                <button class="operator" onclick="handleOperator('*')">x</button>
+                <button class="operator" onclick="handleOperator('/')">÷</button>
+
+                <button class="number" onclick="handleNumber('7')">7</button>
+                <button class="number" onclick="handleNumber('8')">8</button>
+                <button class="number" onclick="handleNumber('9')">9</button>
+                <button class="number" onclick="handleNumber('4')">4</button>
+                <button class="number" onclick="handleNumber('5')">5</button>
+                <button class="number" onclick="handleNumber('6')">6</button>
+                <button class="number" onclick="handleNumber('1')">1</button>
+                <button class="number" onclick="handleNumber('2')">2</button>
+                <button class="number" onclick="handleNumber('3')">3</button>
+                <button id="decimal-button" class="number" onclick="handleNumber('.')">.</button>
+                <button class="number" onclick="handleNumber('0')">0</button>
+                <button id="delete" onclick="handleDelete()">⌫</button>
+                <button class="clear" id="clear-btn" onclick="handleClear()">C</button>
+                <button class="equal" id="equal" onclick="handleEqual()">=</button>
+            </div>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
